@@ -1,0 +1,71 @@
+2019-07-17 06:52:49 - root - INFO - Starting do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "word", False)
+Mega classification for:  word  features
+7467 7467 7467 1151
+Distribution of labels: 
+Counter({'B1': 4666, 'A2': 1835, 'B2': 838, 'A1': 86, 'C1': 42})
+Printing results for: RandomForestClassifier(bootstrap=True, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=300, n_jobs=None, oob_score=False,
+                       random_state=1234, verbose=0, warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39367
+[0.43658211 0.34045394 0.8315508  0.6657754  0.62165775 0.61713521
+ 0.62013423 0.63355705 0.63172043 0.62634409]
+0.6024911004076807 0.5634329055966224
+[[  20   66    0    0    0    0]
+ [ 180  311 1334   10    0    0]
+ [   7  494 3938  227    0    0]
+ [   0    7  595  228    8    0]
+ [   0    0    2   39    1    0]
+ [   0    0    0    0    0    0]]
+Printing results for: LinearSVC(C=1.0, class_weight='balanced', dual=True, fit_intercept=True,
+          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+          multi_class='ovr', penalty='l2', random_state=1234, tol=0.0001,
+          verbose=0)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39367
+[0.35781041 0.32309746 0.58823529 0.51737968 0.32085561 0.28246319
+ 0.45100671 0.54899329 0.59274194 0.61962366]
+0.4602207242880347 0.4687139787094206
+[[  27   55    3    1    0    0]
+ [ 231  444 1118   42    0    0]
+ [  17 1384 2710  554    1    0]
+ [   0   40  516  249   33    0]
+ [   0    0    1   36    5    0]
+ [   0    0    0    0    0    0]]
+Printing results for: LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=1234, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39367
+[0.34979973 0.32443258 0.59893048 0.54411765 0.31550802 0.25435074
+ 0.45637584 0.54496644 0.6061828  0.63037634]
+0.46250406174215364 0.4708828839181222
+[[  27   57    1    1    0    0]
+ [ 269  404 1116   46    0    0]
+ [  16 1322 2747  580    1    0]
+ [   0   23  503  267   45    0]
+ [   0    0    1   34    7    0]
+ [   0    0    0    0    0    0]]
+SAME LANG EVAL DONE FOR THIS LANG
+2019-07-17 07:41:54 - root - INFO - Finished do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "word", False)

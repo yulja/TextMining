@@ -1,0 +1,73 @@
+2019-07-17 03:19:53 - root - INFO - Starting with concatenate label features --> True
+2019-07-17 03:19:53 - root - INFO - Starting do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "word", True)
+Doing: take all data as if it belongs to one large dataset, and do classification
+Mega classification for:  word  features
+7467 7467 7467 1151
+Distribution of labels: 
+Counter({'B1': 4666, 'A2': 1835, 'B2': 838, 'A1': 86, 'C1': 42})
+Printing results for: RandomForestClassifier(bootstrap=True, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=300, n_jobs=None, oob_score=False,
+                       random_state=1234, verbose=0, warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39371
+[0.42723632 0.33511348 0.81951872 0.6657754  0.61363636 0.61579652
+ 0.61879195 0.63355705 0.63172043 0.62634409]
+0.5987490309844999 0.5591899862450326
+[[  17   69    0    0    0    0]
+ [ 178  297 1345   15    0    0]
+ [   6  505 3928  227    0    0]
+ [   0    7  595  227    9    0]
+ [   0    0    1   40    1    0]
+ [   0    0    0    0    0    0]]
+Printing results for: LinearSVC(C=1.0, class_weight='balanced', dual=True, fit_intercept=True,
+          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+          multi_class='ovr', penalty='l2', random_state=1234, tol=0.0001,
+          verbose=0)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39371
+[0.3564753  0.32176235 0.5802139  0.52272727 0.31684492 0.27978581
+ 0.44832215 0.5409396  0.58870968 0.61962366]
+0.45754046346630195 0.4660164162118875
+[[  27   55    3    1    0    0]
+ [ 229  437 1127   42    0    0]
+ [  16 1389 2699  561    1    0]
+ [   0   42  516  247   33    0]
+ [   0    0    1   36    5    0]
+ [   0    0    0    0    0    0]]
+Printing results for: LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=1234, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+39367
+39371
+[0.35514019 0.3271028  0.59358289 0.54278075 0.31283422 0.2583668
+ 0.45771812 0.54496644 0.60887097 0.62903226]
+0.4630395441717088 0.4711997569448814
+[[  28   56    1    1    0    0]
+ [ 265  405 1120   45    0    0]
+ [  13 1321 2747  583    2    0]
+ [   0   23  501  269   45    0]
+ [   0    0    1   34    7    0]
+ [   0    0    0    0    0    0]]
+SAME LANG EVAL DONE FOR THIS LANG
+2019-07-17 04:28:41 - root - INFO - Finished do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "word", True)
