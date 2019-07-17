@@ -1,0 +1,167 @@
+2019-07-17 09:41:50 - root - INFO - Starting cross language with IT as base language
+2019-07-17 09:41:50 - root - INFO - Starting cross language from IT to EN do_cross_lang_all_features(itdirpath, "it", "class", endirpath, "en")
+Ignoring this text:  ../Datasets/IT-Parsed\1365_0100217_IT_B1.txt.parsed.txt
+Printing cross-corpus classification evaluation results: 
+******* 
+ Setting - Train with:  it  Test with:  en  ****** 
+
+Features: pos
+Printing results for: RandomForestClassifier(bootstrap=True, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=300, n_jobs=None, oob_score=False,
+                       random_state=1234, verbose=0, warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+0.793918918918919
+[[   0    0    0    0    0    0]
+ [   0   29  931    0    0    0]
+ [   0   45 3731    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.7164463065730383
+Printing results for: LinearSVC(C=1.0, class_weight='balanced', dual=True, fit_intercept=True,
+          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+          multi_class='ovr', penalty='l2', random_state=1234, tol=0.0001,
+          verbose=0)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\svm\base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+0.5181587837837838
+[[   0    0    0    0    0    0]
+ [  40  468  452    0    0    0]
+ [ 119 1671 1986    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.5708567574076897
+Printing results for: LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=1234, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\metrics\classification.py:1439: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:469: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
+  "this warning.", FutureWarning)
+0.5190033783783784
+[[   0    0    0    0    0    0]
+ [  71  449  440    0    0    0]
+ [ 181 1586 2009    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.5754019570589356
+Features: dep
+Printing results for: RandomForestClassifier(bootstrap=True, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=300, n_jobs=None, oob_score=False,
+                       random_state=1234, verbose=0, warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+0.7702702702702703
+[[   0    0    0    0    0    0]
+ [   0   84  876    0    0    0]
+ [   0  212 3564    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.718828671823915
+Printing results for: LinearSVC(C=1.0, class_weight='balanced', dual=True, fit_intercept=True,
+          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+          multi_class='ovr', penalty='l2', random_state=1234, tol=0.0001,
+          verbose=0)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\svm\base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+0.691722972972973
+[[   0    0    0    0    0    0]
+ [  27  196  737    0    0    0]
+ [  62  634 3080    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.6912169614173151
+Printing results for: LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=1234, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+                dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+                lowercase=True, max_df=1.0, max_features=None, min_df=10,
+                ngram_range=(1, 5), preprocessor=None, stop_words=None,
+                strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                tokenizer=None, vocabulary=None)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\metrics\classification.py:1439: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:469: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
+  "this warning.", FutureWarning)
+0.7328969594594594
+[[   0    0    0    0    0    0]
+ [  19  125  816    0    0    0]
+ [  38  392 3346    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]
+ [   0    0    0    0    0    0]]
+CROSS LANG EVAL DONE. F1score: 
+0.7064582072480966
+Features: domain
+CROSS LANG EVAL
+0.7972972972972973
+[[   2  958]
+ [   2 3774]]
+0.7081753636775321
+0.7972972972972973
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\svm\base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+[[   0  960]
+ [   0 3776]]
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\metrics\classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\linear_model\logistic.py:469: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
+  "this warning.", FutureWarning)
+0.7073765494818126
+0.7972972972972973
+[[   0  960]
+ [   0 3776]]
+0.7073765494818126
+C:\Users\jean-\Anaconda3\envs\tmp\lib\site-packages\sklearn\metrics\classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+2019-07-17 09:48:48 - root - INFO - Finished cross language from IT to EN do_cross_lang_all_features(itdirpath, "it", "class", endirpath, "en")
+2019-07-17 09:48:48 - root - INFO - Finished cross language with IT as base language
