@@ -1,0 +1,51 @@
+2019-07-17 09:32:07 - root - INFO - Starting do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "domain", False)
+Doing: take all data as if it belongs to one large dataset, and do classification
+Mega classification for:  domain  features
+7467 7467 7467 10
+Distribution of labels: 
+Counter({'B1': 4666, 'A2': 1835, 'B2': 838, 'A1': 86, 'C1': 42})
+RandomForestClassifier(bootstrap=True, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=300, n_jobs=None, oob_score=False,
+                       random_state=1234, verbose=0, warm_start=False)
+[0.58611482 0.53805073 0.84491979 0.72727273 0.71256684 0.55287818
+ 0.61208054 0.62818792 0.63306452 0.63709677]
+0.6472232838443489
+[[   8   77    1    0    0]
+ [  30  650 1151    4    0]
+ [   0  443 4152   69    2]
+ [   0   12  802   23    1]
+ [   0    0   38    4    0]]
+0.2754283994597744
+LinearSVC(C=1.0, class_weight='balanced', dual=True, fit_intercept=True,
+          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+          multi_class='ovr', penalty='l2', random_state=1234, tol=0.0001,
+          verbose=0)
+[0.30307076 0.38985314 0.83823529 0.70053476 0.57486631 0.62650602
+ 0.62550336 0.24161074 0.11155914 0.625     ]
+0.5036739520008802
+[[  13   72    1    0    0]
+ [  26  738  796  197   78]
+ [   0 1145 2901  566   54]
+ [   0  184  540  110    4]
+ [   0   11   27    4    0]]
+0.271263227582432
+LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=1234, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)
+
+[0.34312417 0.40053405 0.76604278 0.76871658 0.73930481 0.63453815
+ 0.61208054 0.61879195 0.62903226 0.62634409]
+0.6138509361988864
+[[  66   20    0    0    0]
+ [ 223  563 1025    1   23]
+ [  10  521 3933   45  157]
+ [   0   56  656    2  124]
+ [   0    1   21    1   19]]
+0.31818518873633406
+2019-07-17 09:34:17 - root - INFO - Finished do_mega_multilingual_model_all_features(dedirpath, "de", itdirpath, "it", czdirpath, "cz", endirpath, "en", "domain", False)
